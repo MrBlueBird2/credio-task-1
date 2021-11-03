@@ -11,27 +11,264 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
         body {
             font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            background: #E5E5E5;
+            overflow-x: hidden;
+        }
+
+        #dmb2 {
+            display: none;
         }
     </style>
 </head>
 
-<body>
+<body id="body">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin-top: 0px; max-width: 100%;">
-        <a class="navbar-brand" href="#" style="margin: -14px -6px;">
+        <a class="navbar-brand" style="margin: -14px -15px;">
             <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle py-3 shadow-lg p-5" type="button"
-                    id="dropdownMenuButton1" style="background: black; width: 150px;" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    <span style="position: relative; left: -15px; top: -2px;">Home</span>
+                <button class="btn py-3 p-5 btn-secondary dropdown-toggle text-light" type="button"
+                    id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"
+                    style="background: black; border: 1px solid transparent;" onclick="
+                    if (document.getElementById('dmb2').style.display === 'block') {
+                        document.getElementById('dmb2').style.display = 'none';
+                    } else {
+                        document.getElementById('dmb2').style.display = 'block';
+                    }
+                    ">
+                    Home
                 </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" id="dmb2"
+                    style="height: 91vh; margin-top: 0px; min-width: 100%; width: 360px; box-shadow: 10px 10px 30px grey; overflow-y: auto;">
+                    <br>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <button class="container-item" style="
+                                height: 65px;
+                                width: 72px;
+                                position: relative;
+                                left: 10px;
+                                border-radius: 10px;
+                                background: rgba(84, 96, 110, 1);
+                                outline: none;
+                                border: 1px solid transparent;
+                                ">
+                                    <i class="fa fa-home text-light fs-3" style="margin-top: 15px;"></i>
+                                    <p class="text-dark" style="margin-top: 25px;">Home</p>
+                                </button>
+                            </div>
+                            <div class="col-md-4 py-0 p-4">
+                                <button class="container-item" style="
+                                height: 65px;
+                                width: 72px;
+                                position: relative;
+                                left: 10px;
+                                border-radius: 10px;
+                                background: rgba(252, 109, 54, 1);
+                                outline: none;
+                                border: 1px solid transparent;
+                                ">
+                                    <i class="fa fa-book text-light fs-3" style="margin-top: 15px;"></i>
+                                    <p class="text-dark" style="margin-top: 25px;">Menus</p>
+                                </button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="container-item" style="
+                                height: 65px;
+                                width: 72px;
+                                position: relative;
+                                left: 10px;
+                                border-radius: 10px;
+                                background: rgba(0, 185, 154, 1);
+                                outline: none;
+                                border: 1px solid transparent;
+                                ">
+                                    <i class="fa fa-tag text-light fs-3" style="margin-top: 15px;"></i>
+                                    <p class="text-dark" style="margin-top: 25px;">Items</p>
+                                </button>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="row" style="margin-top: 15px;">
+                            <div class="col-md-3">
+                                <button class="container-item" style="
+                                height: 65px;
+                                width: 72px;
+                                position: relative;
+                                left: 10px;
+                                border-radius: 10px;
+                                background: rgba(84, 96, 110, 1);
+                                outline: none;
+                                border: 1px solid transparent;
+                                ">
+                                    <svg width="43" height="31" viewBox="0 0 43 31" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        style="margin-top: 15px; position: relative; left: 7px;">
+                                        <path
+                                            d="M8.375 28.875H6.5C5.50544 28.875 4.55161 28.4799 3.84835 27.7766C3.14509 27.0734 2.75 26.1196 2.75 25.125V6.375C2.75 5.38044 3.14509 4.42661 3.84835 3.72335C4.55161 3.02009 5.50544 2.625 6.5 2.625H36.5C37.4946 2.625 38.4484 3.02009 39.1517 3.72335C39.8549 4.42661 40.25 5.38044 40.25 6.375V25.125C40.25 26.1196 39.8549 27.0734 39.1517 27.7766C38.4484 28.4799 37.4946 28.875 36.5 28.875H34.625"
+                                            stroke="white" stroke-width="4" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    <svg width="20" height="16" viewBox="0 0 23 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" style="
+                                        /* height: 11.25px;
+                                        width: 18.75px; */
+                                        position: relative;
+                                        left: -28.325px;
+                                        top: 28.125px;
+                                        border-radius: 0px;
+                                        ">
+                                        <path d="M11.5 2.125L20.875 13.375H2.125L11.5 2.125Z" stroke="white"
+                                            stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <p class="text-dark" style="margin-top: 25.45px; margin-left: -4px;">Points of <br>
+                                        <span>Sale</span>
+                                    </p>
+                                </button>
+                            </div>
+                            <div class="col-md-4 py-0 p-4">
+                                <button class="container-item" style="
+                                height: 65px;
+                                width: 72px;
+                                position: relative;
+                                left: 10px;
+                                border-radius: 10px;
+                                background: rgba(100, 70, 156, 1);
+                                outline: none;
+                                border: 1px solid transparent;
+                                ">
+                                    <i class="fa fa-bar-chart text-light fs-3" style="margin-top: 15px;"></i>
+                                    <p class="text-dark" style="margin-top: 25px;">Reports</p>
+                                </button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="container-item" style="
+                                height: 65px;
+                                width: 72px;
+                                position: relative;
+                                left: 10px;
+                                border-radius: 10px;
+                                background: rgba(0, 185, 154, 1);
+                                outline: none;
+                                border: 1px solid transparent;
+                                ">
+                                    <i class="fa fa-sliders text-light fs-3" style="margin-top: 15px;"></i>
+                                    <p class="text-dark" style="margin-top: 25px; margin-left: -16px;">Transactions</p>
+                                </button>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="row" style="margin-top: 20px;">
+                            <div class="col-md-3">
+                                <button class="container-item" style="
+                                height: 65px;
+                                width: 72px;
+                                position: relative;
+                                left: 10px;
+                                border-radius: 10px;
+                                background: rgba(100, 70, 156, 1);
+                                outline: none;
+                                border: 1px solid transparent;
+                                ">
+                                    <i class="fa fa-dollar text-light fs-3" style="margin-top: 15px;"></i>
+                                    <p class="text-dark" style="margin-top: 25.45px;">Deposits</p>
+                                </button>
+                            </div>
+                            <div class="col-md-4 py-0 p-4">
+                                <button class="container-item" style="
+                                height: 65px;
+                                width: 72px;
+                                position: relative;
+                                left: 10px;
+                                border-radius: 10px;
+                                background: rgba(54, 149, 203, 1);
+                                outline: none;
+                                border: 1px solid transparent;
+                                ">
+                                    <i class="fa fa-bar-chart text-light fs-3" style="margin-top: 15px;"></i>
+                                    <p class="text-dark" style="margin-top: 25px; margin-left: -10px;">Employees</p>
+                                </button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="container-item" style="
+                                height: 65px;
+                                width: 72px;
+                                position: relative;
+                                left: 10px;
+                                border-radius: 10px;
+                                background: rgba(0, 185, 154, 1);
+                                outline: none;
+                                border: 1px solid transparent;
+                                ">
+                                    <svg width="43" height="43" viewBox="0 0 43 43" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" style="margin-top: 8px; margin-left: -14px;">
+                                        <path
+                                            d="M21.5 40.25C31.8553 40.25 40.25 31.8553 40.25 21.5C40.25 11.1447 31.8553 2.75 21.5 2.75C11.1447 2.75 2.75 11.1447 2.75 21.5C2.75 31.8553 11.1447 40.25 21.5 40.25Z"
+                                            stroke="white" stroke-width="4" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    <svg width="10" height="18" viewBox="0 0 10 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" style="margin-left: -29px;">
+                                        <path d="M1.5 1.25V12.5L9 16.25" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <p class="text-dark" style="margin-top: 21px; margin-left: -16px;">Transactions</p>
+                                </button>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="row" style="margin-top: 16px;">
+                            <div class="col-md-3">
+                                <button class="container-item" style="
+                                height: 65px;
+                                width: 72px;
+                                position: relative;
+                                left: 10px;
+                                border-radius: 10px;
+                                background: rgba(84, 96, 110, 1);
+                                outline: none;
+                                border: 1px solid transparent;
+                                ">
+                                    <i class="fa fa-cog text-light fs-3" style="margin-top: 15px;"></i>
+                                    <p class="text-dark" style="margin-top: 25.45px; margin-left: -8px;">Accounts &
+                                        <br><span style="margin-left: 8px;">Settings</span>
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                        <hr class="dropdown-divider" style="margin-top: 70px;">
+                        <h6 class="fw-bold text-dark py-1 p-3">
+                            Payroll
+                            </h5>
+                            <h6 class="fw-bold text-dark py-1 p-3">
+                                Invoices
+                                </h5>
+                                <h6 class="fw-bold text-dark py-1 p-3">
+                                    Capital
+                                    </h5>
+                                    <h6 class="fw-bold text-dark py-1 p-3">
+                                        Customers
+                                        </h5>
+                                        <h6 class="fw-bold text-dark py-1 p-3">
+                                            Loyalty
+                                            </h5>
+                                            <h6 class="fw-bold text-dark py-1 p-3">
+                                                Marketing
+                                                </h5>
+                                                <h6 class="fw-bold text-dark py-1 p-3">
+                                                    Gift Cards
+                                                    </h5>
+                                                    <h6 class="fw-bold text-dark py-1 p-3">
+                                                        Apps
+                                                        </h5>
+                    </div>
                 </ul>
             </div>
         </a>
@@ -40,7 +277,8 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse py-0 p-4" id="navbarSupportedContent" style="margin-top: -5px">
+        <div class="collapse navbar-collapse py-0 p-4" id="navbarSupportedContent"
+            style="margin-top: -5px; position: relative; margin-left: 20px;">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <i class="fa fa-search text-muted" style="position: relative; top: 4.7px; left: -5px;"></i>
@@ -49,14 +287,16 @@
                         placeholder="Search">
                 </li>
                 <li class="nav-item active">
-                    <button class="btn btn-success">
+                    <button class="btn btn-success fw-bold"
+                        style="border-radius: 0px; background: rgba(35, 203, 31, 1);                    ">
                         Setup Guide
                     </button>
                 </li>
                 <li class="nav-item active">
                     <i class="fa fa-bell-o fs-5 py-2 p-4 text-muted fw-bold"></i>
-                    <div class="bg-danger rounded-circle" style="max-width: 100%; width: 20px; height: 20px; color: white; margin-top: -40px; margin-left: 36px;">
-                        <span class="text-light" style="font-size: 15px; position: relative; left: 5px; top: -1px;">
+                    <div class="bg-danger rounded-circle"
+                        style="max-width: 100%; width: 20px; height: 20px; color: white; margin-top: -40px; margin-left: 36px;">
+                        <span class="text-light" style="font-size: 15px; position: relative; left: 6px; top: -2px;">
                             1
                         </span>
                     </div>
@@ -64,9 +304,144 @@
                 <li class="nav-item active">
                     <i class="fa fa-question-circle-o fs-5 py-2 p-1 text-muted fw-bold"></i>
                 </li>
+                <li class="nav-item py-0 p-3">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle text-muted fw-bold type=" button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"
+                            style="background: transparent; border: 1px solid transparent;">
+                            Katy's Kitchen
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
         </div>
     </nav>
+    <p class="text-muted text-center py-4">
+        WEDNESDAY SEPTEMBER 13, 2019, 2:24PM
+    </p>
+    <div class="row">
+        <div class="col-md-4" style="max-width: 100%; width: 440px; margin-left: 20px;">
+            <div class="container-item" style="box-shadow: 10px 10px 20px grey;">
+                <div class="bg-light" style="height: 40px;">
+                </div>
+                <div class="bg-dark" style="height: 215px;">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="container-item" style="box-shadow: 10px 10px 20px grey;">
+                <div class="bg-light">
+                    <h5 class="text-primary p-3">
+                        Gross Sales
+                        </h4>
+                </div>
+                <hr class="dropdown-divider" style="margin-top: -10px; max-width: 100%; width: 95%; margin-left: 10px;">
+                <br>
+                <div class="rounded-circle" style="height: 109px;
+                width: 109px;
+                border: 1px solid #aca6a6;
+                margin: 0 auto;
+                margin-top: -10px;
+                ">
+                    <svg width="72" height="88" viewBox="0 0 72 88" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="p-2" style="margin: 10px 16px;">
+                        <rect x="1.5" y="1.5" width="69" height="85" fill="none" stroke="#C4C4C4" stroke-width="3" />
+                    </svg>
+                    <svg width="20" height="21" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        style="margin-top: -145px; margin-left: 42px;">
+                        <rect x="1" y="1" width="15" height="16" fill="none" stroke="#C4C4C4" stroke-width="2" />
+                    </svg>
+                    <svg width="44" height="2" viewBox="0 0 44 2" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        style="margin-top: -160px; margin-left: 30px;">
+                        <line y1="1" x2="44" y2="1" stroke="#C4C4C4" stroke-width="2" />
+                    </svg>
+                    <svg width="22" height="2" viewBox="0 0 22 2" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        style="margin-top: -195px; margin-left: 30px;">
+                        <line y1="1" x2="22" y2="1" stroke="#C4C4C4" stroke-width="2" />
+                    </svg>
+                </div>
+                <h6 class="text-dark" style="font-weight: 400; text-align: center; margin-top: 15px;">
+                    No sales for today
+                </h6>
+                <br>
+            </div>
+        </div>
+        <div class="col-md-4" style="max-width: 100%; width: 440px;">
+            <div class="container-item" style="box-shadow: 10px 10px 20px grey;">
+                <div class="bg-light">
+                    <h5 class="text-primary p-3">
+                        Payment Methods
+                        </h4>
+                </div>
+                <hr class="dropdown-divider" style="margin-top: -10px; max-width: 100%; width: 95%; margin-left: 10px;">
+                <br>
+                <div class="rounded-circle" style="height: 109px;
+                width: 109px;
+                border: 1px solid #aca6a6;
+                margin: 0 auto;
+                margin-top: -10px;
+                ">
+                    <svg width="72" height="88" viewBox="0 0 72 88" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="p-2" style="margin: 10px 16px;">
+                        <rect x="1.5" y="1.5" width="69" height="85" fill="none" stroke="#C4C4C4" stroke-width="3" />
+                    </svg>
+                    <svg width="20" height="21" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        style="margin-top: -145px; margin-left: 42px;">
+                        <rect x="1" y="1" width="15" height="16" fill="none" stroke="#C4C4C4" stroke-width="2" />
+                    </svg>
+                    <svg width="44" height="2" viewBox="0 0 44 2" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        style="margin-top: -160px; margin-left: 30px;">
+                        <line y1="1" x2="44" y2="1" stroke="#C4C4C4" stroke-width="2" />
+                    </svg>
+                    <svg width="22" height="2" viewBox="0 0 22 2" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        style="margin-top: -195px; margin-left: 30px;">
+                        <line y1="1" x2="22" y2="1" stroke="#C4C4C4" stroke-width="2" />
+                    </svg>
+                </div>
+                <h6 class="text-dark" style="font-weight: 400; text-align: center; margin-top: 15px;">
+                    No sales for today
+                </h6>
+                <br>
+            </div>
+        </div>
+    </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-4" style="max-width: 100%; width: 440px; margin-left: 20px;">
+            <div class="container-item" style="box-shadow: 10px 10px 20px grey;">
+                <div class="bg-light" style="height: 40px;">
+                </div>
+                <div class="bg-tpg" style="height: 190px; background: rgba(35, 203, 31, 1);">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="container-item" style="box-shadow: 10px 10px 20px grey; height: 229px;">
+                <div class="bg-light">
+                    <h5 class="text-primary p-3">
+                        Top Items by Sales
+                    </h5>
+                </div>
+                <hr class="dropdown-divider" style="margin-top: -10px; max-width: 100%; width: 95%; margin-left: 10px;">
+            </div>
+        </div>
+        <div class="col-md-4" style="max-width: 100%; width: 440px;">
+            <div class="container-item" style="box-shadow: 10px 10px 20px grey; height: 229px;">
+                <div class="bg-light">
+                    <h5 class="text-primary p-3">
+                        Top Categories by Sales
+                    </h5>
+                </div>
+                <hr class="dropdown-divider" style="margin-top: -10px; max-width: 100%; width: 95%; margin-left: 10px;">
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
